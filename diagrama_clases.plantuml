@@ -1,0 +1,51 @@
+@startuml diagrama_clases
+
+class Persona 
+{
+    string nombre
+    int telefono
+    string direccion
+}
+
+class Jugador
+{
+    int numero
+    string posicion
+}
+
+class Entrenador
+{
+    int nivel_acreditacion
+    int anios_experiencia
+}
+
+class Capitan
+
+class Equipo
+{
+    string nombre
+    int registro
+}
+
+class Juego
+{
+    string localidad
+    int puntuacion
+}
+
+Persona <|-- Jugador
+Persona <|-- Entrenador
+
+Jugador "1" -- "1" Capitan: es 
+
+Jugador "6..20" --> "1" Equipo: juega
+Entrenador "1" --> "many" Equipo: entrena
+Capitan "1" --> "1" Equipo: dirige
+
+Capitan *-- Equipo
+Juego "1..many" *-- "2" Equipo: compite
+Equipo *-- Jugador
+
+Equipo o-- Entrenador
+
+@enduml

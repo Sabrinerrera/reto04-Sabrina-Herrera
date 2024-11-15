@@ -1,0 +1,150 @@
+@startuml diagrama_objetos
+
+object "Juego : Panamericanos" as Juego {
+    localidad = "Chile"
+    puntuacion = 
+}
+
+object "Equipo_1 : Venezuela" as Equipo_1 {
+    nombre = "Venezuela"
+    registro = 
+}
+
+object "Equipo_2 : Colombia" as Equipo_2 {
+    nombre = "Colombia"
+    registro = 
+}
+
+object "Entrenador_1 : Venezuela" as Entrenador_1 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    nivelAcreditacion = 
+    aniosExperiencia =
+}
+
+object "Entrenador_2 : Colombia" as Entrenador_2 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    nivelAcreditacion = 
+    aniosExperiencia = 
+}
+
+object "Jugador_1 : Venezuela" as Jugador_1 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_2 : Venezuela" as Jugador_2 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_3 : Venezuela" as Jugador_3 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_4 : Venezuela" as Jugador_4 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_5 : Venezuela" as Jugador_5 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_6 : Venezuela" as Jugador_6 {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_1C : Colombia" as Jugador_1C {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_2C : Colombia" as Jugador_2C {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_3C : Colombia" as Jugador_3C {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_4C : Colombia" as Jugador_4C {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_5C : Colombia" as Jugador_5C {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+object "Jugador_6C : Colombia" as Jugador_6C {
+    nombre = "..."
+    telefono = 
+    direccion = "..."
+    numero = 
+    posicion = "..."
+}
+
+Juego *-- Equipo_1 : compiten
+Juego *-- Equipo_2 : compiten
+
+Equipo_1 *-- Jugador_1 : juega
+Equipo_1 *-- Jugador_2 : juega
+Equipo_1 *-- Jugador_3 : juega
+Equipo_1 *-- Jugador_4 : juega
+Equipo_1 *-- Jugador_5 : juega
+Equipo_1 *-- Jugador_6 : juega
+
+Equipo_2 *-- Jugador_1C : juega
+Equipo_2 *-- Jugador_2C : juega
+Equipo_2 *-- Jugador_3C : juega
+Equipo_2 *-- Jugador_4C : juega
+Equipo_2 *-- Jugador_5C : juega
+Equipo_2 *-- Jugador_6C : juega
+
+Equipo_1 o-- Entrenador_1 : entrena
+Equipo_2 o-- Entrenador_2 : entrena
+
+@endluml
